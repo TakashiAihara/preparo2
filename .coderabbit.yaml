@@ -16,7 +16,7 @@ reviews:
         - path: "tests/**/*"
           instructions: |
               "Assess the E2E test or Integration Test."
-        - path: "src/**/*.(test|spec))\\.[jt]sx?$"
+        - path: "src/**/*.(test|spec).[jt]sx?$"
           instructions: |
               "Assess the unit test code employing the Vitest testing framework. Confirm that:
               - Test descriptions are sufficiently detailed to clarify the purpose of each test."
