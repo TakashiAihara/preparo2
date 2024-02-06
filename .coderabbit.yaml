@@ -27,4 +27,5 @@ reviews:
             - "DO NOT MERGE"
         drafts: false
         base_branches:
-            - "*"
+          - "develop"
+          - "feature/*"
