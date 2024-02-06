@@ -1,0 +1,32 @@
+language: "jp"
+early_access: true
+
+chat:
+    auto_reply: true
+
+reviews:
+    request_changes_workflow: false
+    high_level_summary: true
+    poem: true
+    review_status: true
+    enable_draft_pr_reviews: true
+    collapse_walkthrough: false
+    path_filters:
+        - "!**/.xml"
+    path_instructions:
+        - path: "tests/**/*"
+          instructions: |
+              "Assess the E2E test or Integration Test."
+        - path: "src/**/*.(test|spec))\\.[jt]sx?$"
+          instructions: |
+              "Assess the unit test code employing the Vitest testing framework. Confirm that:
+              - The tests adhere to Vitest's established best practices.
+              - Test descriptions are sufficiently detailed to clarify the purpose of each test."
+    auto_review:
+        enabled: true
+        ignore_title_keywords:
+            - "WIP"
+            - "DO NOT MERGE"
+        drafts: false
+        base_branches:
+            - "*"
