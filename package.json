@@ -1,11 +1,8 @@
 {
-  "name": "@thxnet/io-helper-ts-template",
+  "author": "TakashiAihara",
+  "name": "preparo2",
   "version": "0.1.0",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "repository": "git@github.com:thxnet/io-helper-ts-template.git",
-  "author": "NoelBao <noel@thxlab.io>",
-  "license": "MIT",
+  "repository": "https://github.com/TakashiAihara/preparo2",
   "devDependencies": {
     "@protobuf-ts/plugin": "^2.9.0",
     "@types/node": "^20.2.4",
